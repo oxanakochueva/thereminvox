@@ -1,5 +1,5 @@
 .redSynth {
-  background-image: image-url('redSynth.svg');
+  background-image: image-url("redSynth.svg");
   background-size: contain;
   background-repeat: no-repeat;
   width: 607px;
@@ -80,6 +80,7 @@
     position: relative;
     left: 350px;
     top: 68px;
+    width: 250px;
     .ToggleSwitch {
       width: 113px;
       height: 13px;
@@ -93,20 +94,20 @@
     }
     .sliderFrequency {
       position: relative;
-      top: -131px;
-      left: -71px;
+      top: -161px;
+      left: -55px;
       transform: rotate(8deg);
     }
     .sliderDepth {
       position: relative;
-      right: 157px;
-      bottom: 227px;
+      right: 145px;
+      bottom: 206px;
       transform: rotate(-9deg);
     }
     .sliderSpread {
       position: relative;
-      right: 275px;
-      top: -314px;
+      right: 241px;
+      top: -225px;
       transform: rotate(-32deg);
     }
   }
@@ -115,6 +116,7 @@
     position: relative;
     left: 350px;
     bottom: 100px;
+    width: 60px;
     .ToggleSwitch {
       position: relative;
       left: -241px;

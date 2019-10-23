@@ -1,5 +1,5 @@
 .darkSynth {
-  background-image: image-url('darkSynth.svg');
+  background-image: image-url("darkSynth.svg");
   background-size: contain;
   background-repeat: no-repeat;
   width: 362px;
@@ -9,6 +9,7 @@
   position: relative;
   right: 490px;
   bottom: 422px;
+  z-index: 4;
 
   .Slider {
     background: #6b6060;

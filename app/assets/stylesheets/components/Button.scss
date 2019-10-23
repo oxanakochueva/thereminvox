@@ -6,6 +6,7 @@
   border: 1px solid;
   border-radius: 2px;
   cursor: pointer;
+  z-index: 4;
 
   &.on {
     background: #ff9000;

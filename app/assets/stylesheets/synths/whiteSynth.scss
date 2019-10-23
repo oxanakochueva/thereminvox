@@ -1,5 +1,5 @@
 .whiteSynth {
-  background-image: image-url('whiteSynth.svg');
+  background-image: image-url("whiteSynth.svg");
   background-size: contain;
   background-repeat: no-repeat;
   width: 683px;
@@ -33,11 +33,17 @@
   .chebyshev {
     position: relative;
     bottom: 132px;
+
+    .ToggleSwitch {
+      position: relative;
+      left: 242px;
+      top: 7px;
+    }
     .sliderWet {
       position: relative;
-      top: 100px;
+      top: 62px;
       left: 14px;
-      transform: rotate(97deg);
+      transform: rotate(-86deg);
     }
     .sliderOrder {
       position: relative;

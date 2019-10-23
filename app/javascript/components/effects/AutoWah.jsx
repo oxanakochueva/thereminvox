@@ -1,14 +1,14 @@
-import React from 'react'
+import React from "react";
 
-import PlaySwitch from '../controls/PlaySwitch'
-import ToggleSwitch from '../controls/ToggleSwitch'
-import Slider from '../controls/Slider'
-import Knob from '../controls/Knob'
-import ButtonSet from '../controls/ButtonSet'
+import PlaySwitch from "../controls/PlaySwitch";
+import ToggleSwitch from "../controls/ToggleSwitch";
+import Slider from "../controls/Slider";
+import Knob from "../controls/Knob";
+import ButtonSet from "../controls/ButtonSet";
 
 export default class AutoWah extends React.Component {
   constructor(props) {
-    super(props)
+    super(props);
   }
 
   render() {
@@ -17,10 +17,11 @@ export default class AutoWah extends React.Component {
       effect,
       wet,
       on,
+      value,
       toggleEffect,
       changeEffectWetValue,
       changeEffectValue
-    } = this.props
+    } = this.props;
 
     return (
       <div className="Effect autoWah">
@@ -69,7 +70,7 @@ export default class AutoWah extends React.Component {
         <div className="sliderGain">
           <Slider
             name={name}
-            property="gain.value"
+            property="effect.gain.value"
             min="0"
             max="10"
             on={on}
@@ -100,6 +101,6 @@ export default class AutoWah extends React.Component {
           />
         </div>
       </div>
-    )
+    );
   }
 }
