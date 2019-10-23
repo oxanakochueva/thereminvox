@@ -1,0 +1,53 @@
+.container {
+  width: 1440px;
+  height: 700px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  .common {
+    background: white;
+    position: absolute;
+    left: 175px;
+    top: 560px;
+    font-weight: bold;
+    border: 1px solid;
+
+    .sliderVolume {
+      text-align: center;
+      h2 {
+        &:before {
+          content: '\2212';
+          margin-right: 2px;
+        }
+        &:after {
+          content: '\002B';
+          margin-left: 2px;
+        }
+      }
+      .Slider {
+        width: 100px;
+        background: #d8d8d8;
+
+        .thumb {
+          background: #6b6060;
+        }
+      }
+    }
+  }
+
+  .synthsPlay {
+    width: 235px;
+    display: flex;
+    flex-direction: column;
+    padding: 22px;
+    background: #ff3e3e;
+    border: 2px solid black;
+    border-radius: 5px;
+  }
+
+  .innerContainer {
+    padding: 12px;
+  }
+}

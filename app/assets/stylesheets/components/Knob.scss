@@ -1,0 +1,52 @@
+.KnobContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background: #d8d8d8;
+  border-radius: 10px;
+  border: 1px solid;
+  cursor: pointer;
+  &::before {
+    content: '';
+    width: 8px;
+    height: 6px;
+    position: relative;
+    left: -8px;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    background: #4a4a4a;
+  }
+  &::after {
+    content: '';
+    width: 8px;
+    height: 6px;
+    position: relative;
+    left: 8px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    background: #4a4a4a;
+  }
+
+  .Knob {
+    position: relative;
+    width: 34px;
+    height: 34px;
+    border-radius: 30px;
+    background: #4a4a4a;
+    border: 1px solid;
+
+    &::before {
+      position: absolute;
+      left: -2px;
+      top: calc(50% - 3px);
+      border-radius: 5px;
+      content: '';
+      width: 52%;
+      height: 4px;
+      background: #f2f2f2;
+      border: 1px solid;
+    }
+  }
+}

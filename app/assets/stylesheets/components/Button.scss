@@ -1,0 +1,27 @@
+.Button {
+  padding: 4px;
+  width: 25px;
+  margin: 5px;
+  background: #ffcf16;
+  border: 1px solid;
+  border-radius: 2px;
+  cursor: pointer;
+
+  &.on {
+    background: #ff9000;
+    border: 1px solid black;
+    color: white;
+    /*     animation: blink-animation 1s steps(5, start) infinite;
+-webkit-animation: blink-animation 1s steps(5, start) infinite; */
+  }
+  /*   @keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+} */
+}

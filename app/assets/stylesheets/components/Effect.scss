@@ -1,0 +1,14 @@
+.Effect {
+  .ToggleSwitch {
+    width: 15px;
+    height: 15px;
+    background: white;
+    border: 1px solid black;
+    border-radius: 50%;
+    cursor: pointer;
+    &.on {
+      background: black;
+      color: white;
+    }
+  }
+}

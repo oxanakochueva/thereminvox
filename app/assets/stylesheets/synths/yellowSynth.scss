@@ -1,0 +1,120 @@
+.yellowSynth {
+  background-image: image-url('yellowSynth.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 370px;
+  height: 390px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  overflow: hidden;
+  position: relative;
+  right: 151px;
+  bottom: 78px;
+  /* filter: grayscale(100%); */
+
+  .Slider {
+    background: #ff6737;
+    border: 1px solid;
+  }
+
+  .playButton {
+    position: relative;
+    left: 150px;
+    top: 53px;
+    font-size: 28px;
+    .ToggleSwitch {
+      padding-top: 7px;
+      width: 57px;
+    }
+  }
+
+  .sliderAttack {
+    position: relative;
+    left: 33px;
+    transform: rotate(-19deg);
+  }
+  .sliderDecay {
+    position: relative;
+    left: 75px;
+    top: 10px;
+    transform: rotate(70deg);
+  }
+  .sliderSustain {
+    position: relative;
+    left: 117px;
+    top: 25px;
+    transform: rotate(-15deg);
+  }
+
+  .distortion {
+    position: relative;
+    left: 33px;
+    .ToggleSwitch {
+      position: relative;
+      left: 25px;
+      bottom: 20px;
+    }
+    .sliderWet {
+      position: relative;
+      right: 52px;
+      top: 59px;
+      transform: rotate(122deg);
+    }
+    .sliderDistortion {
+      position: relative;
+      left: 28px;
+      bottom: 15px;
+      transform: rotate(-15deg);
+    }
+    .buttonSetOversample {
+      transform: rotate(-59deg);
+      position: relative;
+      bottom: 91px;
+      left: 67px;
+
+      .ButtonSet {
+        width: 267px;
+        height: 30px;
+      }
+      .Button {
+        width: 68px;
+      }
+    }
+  }
+  .freeverb {
+    .ToggleSwitch {
+      right: 10px;
+      position: relative;
+      top: 3px;
+    }
+    .Slider {
+      width: 60px;
+      height: 6px;
+      .thumb {
+        width: 4px;
+        height: 4px;
+      }
+    }
+    .sliderWet {
+      transform: rotate(28deg);
+      position: relative;
+      bottom: 13px;
+      right: 65px;
+    }
+    .sliderRoomSize {
+      transform: rotate(28deg);
+      position: relative;
+      bottom: 20px;
+      right: 88px;
+    }
+    .sliderDampening {
+      transform: rotate(28deg);
+      position: relative;
+      bottom: 26px;
+      right: 108px;
+    }
+  }
+}

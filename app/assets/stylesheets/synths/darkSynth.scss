@@ -1,0 +1,83 @@
+.darkSynth {
+  background-image: image-url('darkSynth.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 362px;
+  height: 334px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  right: 490px;
+  bottom: 422px;
+
+  .Slider {
+    background: #6b6060;
+  }
+
+  .playButton {
+    position: relative;
+    top: 10px;
+    left: 51px;
+    font-size: 28px;
+    .ToggleSwitch {
+      padding-top: 7px;
+      width: 57px;
+    }
+  }
+
+  .autoWah {
+    position: relative;
+    left: 100px;
+    bottom: 68px;
+    .ToggleSwitch {
+      position: relative;
+      bottom: 22px;
+      left: 52px;
+    }
+
+    .sliderWet {
+      transform: rotate(-33deg);
+      position: relative;
+      right: 86px;
+      bottom: 38px;
+    }
+    .sliderBaseFrequency {
+      transform: rotate(20deg);
+      position: relative;
+      right: -5px;
+      top: 61px;
+    }
+    .sliderOctaves {
+      transform: rotate(79deg);
+      position: relative;
+      right: 67px;
+      top: 194px;
+    }
+    .knobSensitivity {
+    }
+    .sliderGain {
+      transform: rotate(-33deg);
+      position: relative;
+      right: 12px;
+      bottom: 35px;
+    }
+    .sliderAttack {
+      transform: rotate(-50deg);
+      position: relative;
+      right: 71px;
+      bottom: 64px;
+      .Slider {
+        width: 30px;
+      }
+    }
+    .sliderRelease {
+      transform: rotate(-111deg);
+      position: relative;
+      right: 300px;
+      bottom: 283px;
+      .Slider {
+        width: 50px;
+      }
+    }
+  }
+}

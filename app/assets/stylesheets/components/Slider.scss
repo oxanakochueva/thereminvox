@@ -1,0 +1,25 @@
+.Slider {
+  margin: 10px;
+  position: relative;
+  width: 65px;
+  height: 10px;
+  /* background: #4a4a4a; */
+  background: #ff9000;
+  border: 1px solid black;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  &:active {
+    cursor: pointer;
+  }
+
+  .thumb {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-radius: 10px;
+    background: white;
+    transition: all 0.1s ease;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,142 @@
+.whiteSynth {
+  background-image: image-url('whiteSynth.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 683px;
+  height: 701px;
+  transform: rotate(-7deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  left: 551px;
+  bottom: 612px;
+
+  .Slider {
+    background: #ff6737;
+    border: 1px solid;
+  }
+
+  .playButton {
+    z-index: 1;
+    position: relative;
+    left: 34px;
+    top: -18px;
+    font-size: 28px;
+    .ToggleSwitch {
+      padding-top: 7px;
+      width: 57px;
+    }
+  }
+
+  .chebyshev {
+    position: relative;
+    bottom: 132px;
+    .sliderWet {
+      position: relative;
+      top: 100px;
+      left: 14px;
+      transform: rotate(97deg);
+    }
+    .sliderOrder {
+      position: relative;
+      top: 10px;
+      transform: rotate(45deg);
+    }
+    .buttonSetOversample {
+      position: relative;
+      top: 374px;
+      transform: rotate(54deg);
+      left: 143px;
+      z-index: 1;
+    }
+  }
+
+  .chorus {
+    position: relative;
+    bottom: 73px;
+    left: 60px;
+
+    .ToggleSwitch {
+      position: relative;
+      left: -5px;
+      top: 5px;
+    }
+    .sliderWet {
+      position: relative;
+      bottom: 51px;
+      left: -19px;
+      transform: rotate(23deg);
+    }
+    .sliderFrequency {
+      width: 100px;
+      position: relative;
+      bottom: 20px;
+      left: 26px;
+      transform: rotate(64deg);
+    }
+    .sliderDelayTime {
+      position: relative;
+      bottom: 48px;
+      left: 47px;
+      transform: rotate(64deg);
+    }
+    .sliderDepth {
+      position: relative;
+      bottom: 78px;
+      left: 70px;
+      transform: rotate(64deg);
+    }
+    .knobSpread {
+      position: relative;
+      left: 103px;
+      bottom: 236px;
+      transform: rotate(-25deg);
+    }
+  }
+
+  .vibrato {
+    position: relative;
+    bottom: 73px;
+    left: 60px;
+    .ToggleSwitch {
+      width: 200px;
+      border-radius: 20px;
+      transform: rotate(-45deg);
+      position: relative;
+      left: -40px;
+    }
+    .sliderWet {
+      position: relative;
+      right: 103px;
+      top: 97px;
+      transform: rotate(19deg);
+      .Slider {
+        width: 55px;
+      }
+    }
+    .sliderMaxDelay {
+      right: 160px;
+      position: relative;
+      top: 123px;
+      transform: rotate(37deg);
+    }
+    .sliderDepth {
+      position: relative;
+      right: 65px;
+      bottom: -7px;
+      transform: rotate(-4deg);
+      .Slider {
+        width: 155px;
+      }
+    }
+    .knobFrequency {
+      position: relative;
+      bottom: 187px;
+      left: 29px;
+      transform: rotate(19deg);
+      z-index: 1;
+    }
+  }
+}

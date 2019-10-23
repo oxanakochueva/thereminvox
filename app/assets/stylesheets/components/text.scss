@@ -1,0 +1,98 @@
+.text {
+  font-size: 16px;
+  position: absolute;
+  /* color: white; */
+  /* font-weight: bold; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  span {
+    font-size: 30px;
+    margin: 13px;
+  }
+}
+
+.yellowSynth {
+  .text {
+    color: black;
+  }
+  .swipe {
+    left: 95px;
+    top: 261px;
+    transform: rotate(-4deg);
+  }
+  .click {
+    left: 35px;
+    top: 185px;
+    transform: rotate(9deg);
+  }
+}
+
+.whiteSynth {
+  .text {
+    color: black;
+  }
+  .onOf {
+    top: 37px;
+    left: 408px;
+    transform: rotate(-46deg);
+  }
+  .swipe {
+    left: 127px;
+    top: 603px;
+    transform: rotate(47deg);
+  }
+  .swipe2 {
+    left: 462px;
+    transform: rotate(-17deg);
+  }
+  .spin {
+    left: 309px;
+    top: 372px;
+    transform: rotate(18deg);
+  }
+  .click {
+    left: 380px;
+    top: 455px;
+  }
+}
+
+.redSynth {
+  .onOf {
+    left: 320px;
+    top: 359px;
+    transform: rotate(-27deg);
+  }
+  .swipe {
+    left: 453px;
+    top: 137px;
+    transform: rotate(-29deg);
+  }
+  .click {
+    left: 114px;
+    top: 232px;
+    transform: rotate(-18deg);
+  }
+  .click2 {
+    left: 489px;
+    top: 312px;
+    transform: rotate(-10deg);
+  }
+}
+
+.darkSynth {
+  .text {
+    color: white;
+  }
+  .click {
+    top: 43px;
+    left: 151px;
+    transform: rotate(-13deg);
+  }
+  .spin {
+    bottom: 70px;
+    left: 52px;
+    transform: rotate(31deg);
+  }
+}

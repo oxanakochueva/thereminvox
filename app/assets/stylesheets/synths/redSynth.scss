@@ -1,0 +1,148 @@
+.redSynth {
+  background-image: image-url('redSynth.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 607px;
+  height: 635px;
+  transform: rotate(-3deg);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  position: relative;
+  left: -187px;
+  z-index: 2;
+
+  .Slider {
+    background: #ff9000;
+  }
+
+  .playButton {
+    position: relative;
+    left: 269px;
+    top: 278px;
+    font-size: 28px;
+    .ToggleSwitch {
+      padding-top: 7px;
+      width: 57px;
+    }
+  }
+
+  .buttonSetType {
+    width: 450px;
+    position: absolute;
+    left: 119px;
+    top: 208px;
+    transform: rotate(22deg);
+
+    .Button {
+      margin: 7px;
+      width: 50px;
+    }
+  }
+
+  .sliderCount {
+    position: absolute;
+    left: 52px;
+    transform: rotate(-45deg);
+  }
+  .sliderSpread {
+    position: absolute;
+    top: 183px;
+    transform: rotate(-69deg);
+  }
+  .sliderFrequency {
+    position: absolute;
+    top: 258px;
+    transform: rotate(-81deg);
+    left: 2px;
+    .Slider {
+      width: 45px;
+    }
+  }
+  .sliderDetune {
+    position: absolute;
+    left: 282px;
+    top: 70px;
+    .Slider {
+      width: 144px;
+    }
+  }
+  .sliderPartialCount {
+    position: absolute;
+    left: 253px;
+    transform: rotate(-4deg);
+    .Slider {
+      width: 244px;
+    }
+  }
+
+  .tremolo {
+    position: relative;
+    left: 350px;
+    top: 68px;
+    .ToggleSwitch {
+      width: 113px;
+      height: 13px;
+      border-radius: 10px;
+      transform: rotate(-32deg);
+    }
+    .sliderWet {
+      position: relative;
+      bottom: 9px;
+      transform: rotate(26deg);
+    }
+    .sliderFrequency {
+      position: relative;
+      top: -131px;
+      left: -71px;
+      transform: rotate(8deg);
+    }
+    .sliderDepth {
+      position: relative;
+      right: 157px;
+      bottom: 227px;
+      transform: rotate(-9deg);
+    }
+    .sliderSpread {
+      position: relative;
+      right: 275px;
+      top: -314px;
+      transform: rotate(-32deg);
+    }
+  }
+
+  .pingPongDelay {
+    position: relative;
+    left: 350px;
+    bottom: 100px;
+    .ToggleSwitch {
+      position: relative;
+      left: -241px;
+      bottom: -92px;
+    }
+    .sliderWet {
+      position: relative;
+      top: 67px;
+      right: 36px;
+      transform: rotate(10deg);
+      .Slider {
+        width: 92px;
+      }
+    }
+    .sliderDelayTime {
+      position: relative;
+      top: 44px;
+      transform: rotate(-5deg);
+      .Slider {
+        width: 154px;
+      }
+    }
+    .sliderMaxDelayTime {
+      position: relative;
+      top: 100px;
+      .Slider {
+        width: 210px;
+      }
+    }
+  }
+}
