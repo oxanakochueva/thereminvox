@@ -1,8 +1,8 @@
 @font-face {
-  font-family: 'Neue Machina';
-  src: asset-url('Neue_Machina.ttf');
-  src: local('Neue Machina'), asset-url('Neue_Machina.ttf') format('truetype'),
-    asset-url('Neue_Machina.woff') format('woff');
+  font-family: "Neue Machina";
+  src: asset-url("Neue_Machina.ttf");
+  src: local("Neue Machina"), asset-url("Neue_Machina.ttf") format("truetype"),
+    asset-url("Neue_Machina.woff") format("woff");
 }
 
 body {
@@ -11,9 +11,12 @@ body {
   margin: 0 auto;
   padding: 20px;
   /* font-family: verdana, arial, helvetica, sans-serif; */
-  font-family: 'Neue Machina';
+  font-family: "Neue Machina";
   font-size: 13px;
   line-height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 p,

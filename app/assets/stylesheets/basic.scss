@@ -1,6 +1,7 @@
 .container {
   width: 1440px;
-  height: 700px;
+  height: 760px;
+  overflow: hidden;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -18,11 +19,11 @@
       text-align: center;
       h2 {
         &:before {
-          content: '\2212';
+          content: "\2212";
           margin-right: 2px;
         }
         &:after {
-          content: '\002B';
+          content: "\002B";
           margin-left: 2px;
         }
       }
