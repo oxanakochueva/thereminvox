@@ -1,8 +1,6 @@
 .text {
   font-size: 16px;
   position: absolute;
-  /* color: white; */
-  /* font-weight: bold; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -14,9 +12,6 @@
 }
 
 .yellowSynth {
-  .text {
-    color: black;
-  }
   .swipe {
     left: 95px;
     top: 261px;
@@ -30,9 +25,6 @@
 }
 
 .whiteSynth {
-  .text {
-    color: black;
-  }
   .onOf {
     top: 37px;
     left: 408px;

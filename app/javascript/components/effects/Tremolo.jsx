@@ -1,14 +1,14 @@
-import React from 'react'
+import React from "react";
 
-import PlaySwitch from '../controls/PlaySwitch'
-import ToggleSwitch from '../controls/ToggleSwitch'
-import Slider from '../controls/Slider'
-import Knob from '../controls/Knob'
-import ButtonSet from '../controls/ButtonSet'
+import PlaySwitch from "../controls/PlaySwitch";
+import ToggleSwitch from "../controls/ToggleSwitch";
+import Slider from "../controls/Slider";
+import Knob from "../controls/Knob";
+import ButtonSet from "../controls/ButtonSet";
 
 export default class Tremolo extends React.Component {
   constructor(props) {
-    super(props)
+    super(props);
   }
 
   render() {
@@ -21,21 +21,9 @@ export default class Tremolo extends React.Component {
       toggleEffect,
       changeEffectWetValue,
       changeEffectValue
-    } = this.props
+    } = this.props;
 
     return (
-      // <ToggleSwitch value="" current={on} handleClick={toggleEffect} />
-      // <div className="sliderWet">
-      //   <Slider
-      //     name={name}
-      //     property="wet"
-      //     min="0"
-      //     max="1"
-      //     on={on}
-      //     value={effect.wet}
-      //     handleValueChange={changeEffectWetValue}
-      //   />
-      // </div>
       <div className="Effect tremolo">
         <div className="sliderFrequency">
           <Slider
@@ -71,6 +59,6 @@ export default class Tremolo extends React.Component {
           />
         </div>
       </div>
-    )
+    );
   }
 }

@@ -20,10 +20,10 @@
     },
     "synth": {
       "js": [
-        "/packs/js/synth-27249ea9969f70f4f524.js"
+        "/packs/js/synth-5aa1e48ca40a13132571.js"
       ],
       "js.map": [
-        "/packs/js/synth-27249ea9969f70f4f524.js.map"
+        "/packs/js/synth-5aa1e48ca40a13132571.js.map"
       ]
     },
     "thereminvox": {
@@ -37,8 +37,8 @@
   },
   "server_rendering.js": "/packs/js/server_rendering-eb7efdd347777e14665c.js",
   "server_rendering.js.map": "/packs/js/server_rendering-eb7efdd347777e14665c.js.map",
-  "synth.js": "/packs/js/synth-27249ea9969f70f4f524.js",
-  "synth.js.map": "/packs/js/synth-27249ea9969f70f4f524.js.map",
+  "synth.js": "/packs/js/synth-5aa1e48ca40a13132571.js",
+  "synth.js.map": "/packs/js/synth-5aa1e48ca40a13132571.js.map",
   "thereminvox.js": "/packs/js/thereminvox-ddcc9f5aedb26217d13b.js",
   "thereminvox.js.map": "/packs/js/thereminvox-ddcc9f5aedb26217d13b.js.map"
 }
