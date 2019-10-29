@@ -1,19 +1,19 @@
-import React from 'react'
-import Menubar from '../components/Menubar'
-import Tone from 'tone'
+import React from "react";
+import Menubar from "../components/Menubar";
+import Tone from "tone";
 
 export default class Thereminvox extends React.Component {
   constructor(props) {
-    super(props)
+    super(props);
 
     const audioContext = new (window.AudioContext ||
-      window.webkitAudioContext)()
-    let oscillator = audioContext.createOscillator()
-    oscillator.type = 'sine'
+      window.webkitAudioContext)();
+    let oscillator = audioContext.createOscillator();
+    oscillator.type = "sine";
 
-    let analyser = audioContext.createAnalyser()
-    analyser.fftSize = 2048
-    oscillator.connect(analyser)
+    let analyser = audioContext.createAnalyser();
+    analyser.fftSize = 2048;
+    oscillator.connect(analyser);
 
     this.state = {
       audioContext: audioContext,
@@ -23,40 +23,40 @@ export default class Thereminvox extends React.Component {
       x: 0,
       y: 0,
       fftData: []
-    }
+    };
 
-    this.handleMouseMove = this.handleMouseMove.bind(this)
-    this.handleStart = this.handleStart.bind(this)
-    this.handleStop = this.handleStop.bind(this)
-    this.handleStartOrStopClick = this.handleStartOrStopClick.bind(this)
-    this.changeFrequency = this.changeFrequency.bind(this)
-    this.changeDetune = this.changeDetune.bind(this)
-    this.changeVisualization = this.changeVisualization.bind(this)
-    this.handleSynthPlay = this.handleSynthPlay.bind(this)
+    this.handleMouseMove = this.handleMouseMove.bind(this);
+    this.handleStart = this.handleStart.bind(this);
+    this.handleStop = this.handleStop.bind(this);
+    this.handleStartOrStopClick = this.handleStartOrStopClick.bind(this);
+    this.changeFrequency = this.changeFrequency.bind(this);
+    this.changeDetune = this.changeDetune.bind(this);
+    this.changeVisualization = this.changeVisualization.bind(this);
+    this.handleSynthPlay = this.handleSynthPlay.bind(this);
   }
 
   componentDidMount() {
-    document.addEventListener('mousemove', this.handleMouseMove)
+    document.addEventListener("mousemove", this.handleMouseMove);
   }
 
   handleMouseMove(e) {
     this.setState({
       x: e.clientX,
       y: e.clientY
-    })
+    });
 
-    this.changeFrequency()
-    this.changeDetune()
-    this.changeVisualization()
+    this.changeFrequency();
+    this.changeDetune();
+    this.changeVisualization();
   }
 
   handleStartOrStopClick() {
-    let { playing } = this.state
+    let { playing } = this.state;
 
     if (playing) {
-      this.handleStop()
+      this.handleStop();
     } else {
-      this.handleStart()
+      this.handleStart();
     }
   }
 
@@ -115,27 +115,27 @@ export default class Thereminvox extends React.Component {
   //   // Tone.Transport.start()
   // }
   handleSynthPlay() {
-    let counter = 0
-    let loopBeat = new Tone.Loop(beat, '8n')
+    let counter = 0;
+    let loopBeat = new Tone.Loop(beat, "8n");
 
     let baseBeat = new Tone.MembraneSynth({
       pitchDecay: 0.01,
       octaves: 2,
       oscillator: {
-        type: 'sine'
+        type: "sine"
       },
       envelope: {
         attack: 0.1,
         decay: 0.4,
         sustain: 1,
         release: 1.4,
-        attackCurve: 'sine'
+        attackCurve: "sine"
       }
-    }).toMaster()
+    }).toMaster();
 
     let noise = new Tone.NoiseSynth({
       noise: {
-        type: 'brown'
+        type: "brown"
       },
       envelope: {
         attack: 1.5,
@@ -143,7 +143,7 @@ export default class Thereminvox extends React.Component {
         sustain: 1
       },
       volume: -6
-    }).toMaster()
+    }).toMaster();
 
     let metal = new Tone.MetalSynth({
       frequency: 2500,
@@ -156,108 +156,108 @@ export default class Thereminvox extends React.Component {
       modulationIndex: 16,
       resonance: 7000,
       octaves: 0.5
-    }).toMaster()
+    }).toMaster();
 
     let polySynth = new Tone.PolySynth({
       polyphony: 4,
       volume: 1,
       detune: 0,
       voice: Tone.Synth
-    }).toMaster()
+    }).toMaster();
 
     function beat(time) {
-      baseBeat.triggerAttackRelease('8n', time)
+      baseBeat.triggerAttackRelease("8n", time);
 
       if (counter % 15 === 0) {
-        noise.triggerAttackRelease(time, 0.1)
-        polySynth.triggerAttackRelease('G#1', time)
-        polySynth.triggerAttackRelease('A2', 0.5)
+        noise.triggerAttackRelease(time, 0.1);
+        polySynth.triggerAttackRelease("G#1", time);
+        polySynth.triggerAttackRelease("A2", 0.5);
       }
       if (counter % 5 === 0) {
-        polySynth.triggerAttackRelease(time)
+        polySynth.triggerAttackRelease(time);
       }
 
       if (counter % 3 !== 1) {
-        baseBeat.triggerAttackRelease('B2', '8n', time)
+        baseBeat.triggerAttackRelease("B2", "8n", time);
       }
       if (counter % 8 !== 1) {
-        metal.triggerAttackRelease('4n', time, 0.1)
+        metal.triggerAttackRelease("4n", time, 0.1);
 
-        polySynth.triggerAttackRelease('A#3', 0.1)
+        polySynth.triggerAttackRelease("A#3", 0.1);
       }
 
-      counter = (counter + 1) % 8
+      counter = (counter + 1) % 8;
     }
 
-    Tone.Transport.start()
-    loopBeat.start(0)
+    Tone.Transport.start();
+    loopBeat.start(0);
   }
 
   handleStart() {
-    let { audioContext, oscillator, analyser, x, y } = this.state
+    let { audioContext, oscillator, analyser, x, y } = this.state;
 
-    oscillator = audioContext.createOscillator()
-    oscillator.type = 'sine'
-    oscillator.frequency.setValueAtTime(x, audioContext.currentTime)
+    oscillator = audioContext.createOscillator();
+    oscillator.type = "sine";
+    oscillator.frequency.setValueAtTime(x, audioContext.currentTime);
 
-    oscillator.connect(audioContext.destination)
-    oscillator.start()
+    oscillator.connect(audioContext.destination);
+    oscillator.start();
 
-    analyser = audioContext.createAnalyser()
-    analyser.fftSize = 2048
-    oscillator.connect(analyser)
+    analyser = audioContext.createAnalyser();
+    analyser.fftSize = 2048;
+    oscillator.connect(analyser);
 
     this.setState({
       oscillator: oscillator,
       analyser: analyser,
       playing: true
-    })
+    });
   }
 
   handleStop() {
-    let { oscillator } = this.state
-    oscillator.stop()
+    let { oscillator } = this.state;
+    oscillator.stop();
 
     this.setState({
       oscillator: oscillator,
       playing: false
-    })
+    });
   }
 
   changeFrequency() {
-    let { audioContext, oscillator, x, y } = this.state
-    oscillator.frequency.setValueAtTime(x, audioContext.currentTime)
+    let { audioContext, oscillator, x, y } = this.state;
+    oscillator.frequency.setValueAtTime(x, audioContext.currentTime);
   }
 
   changeDetune() {
-    let { audioContext, oscillator, x, y } = this.state
-    oscillator.detune.setValueAtTime(y, audioContext.currentTime)
+    let { audioContext, oscillator, x, y } = this.state;
+    oscillator.detune.setValueAtTime(y, audioContext.currentTime);
   }
 
   changeVisualization() {
-    const { analyser, playing } = this.state
+    const { analyser, playing } = this.state;
 
     if (playing) {
-      const bufferLength = analyser.frequencyBinCount
-      let dataArray = new Uint8Array(bufferLength)
-      analyser.getByteTimeDomainData(dataArray)
+      const bufferLength = analyser.frequencyBinCount;
+      let dataArray = new Uint8Array(bufferLength);
+      analyser.getByteTimeDomainData(dataArray);
 
       this.setState({
         fftData: dataArray
-      })
+      });
     }
   }
 
   render() {
-    const { playing, analyser, fftData } = this.state
-    let button = 'Start'
-    const data = analyser.frequencyBinCount
+    const { playing, analyser, fftData } = this.state;
+    let button = "Start";
+    const data = analyser.frequencyBinCount;
 
     if (playing) {
-      button = 'Stop'
+      button = "Stop";
     }
 
-    let elements = []
+    let elements = [];
 
     if (fftData != undefined) {
       fftData.map(function(fftParam, i) {
@@ -265,10 +265,10 @@ export default class Thereminvox extends React.Component {
           <div
             key={i}
             className="analyserCol"
-            style={{ height: fftParam + 'px' }}
+            style={{ height: fftParam + "px" }}
           />
-        )
-      })
+        );
+      });
     }
 
     return (
@@ -277,6 +277,6 @@ export default class Thereminvox extends React.Component {
         <div onClick={this.handleStartOrStopClick}> {button}</div>
         <div className="analyser">{elements}</div>
       </div>
-    )
+    );
   }
 }

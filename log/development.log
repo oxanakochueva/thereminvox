@@ -1,0 +1,375 @@
+Started GET "/oscillators" for ::1 at 2019-10-24 23:28:09 +0300
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by OscillatorsController#index as HTML
+  Rendering oscillators/index.html.erb within layouts/application
+  Rendered oscillators/index.html.erb within layouts/application (Duration: 5.5ms | Allocations: 191)
+[Webpacker] Compiling…
+Started GET "/oscillators" for ::1 at 2019-10-24 23:28:12 +0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by OscillatorsController#index as HTML
+  Rendering oscillators/index.html.erb within layouts/application
+  Rendered oscillators/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 5)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 9070ms (Views: 9059.1ms | ActiveRecord: 0.0ms | Allocations: 1602267)
+
+
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 6302ms (Views: 6300.9ms | ActiveRecord: 0.0ms | Allocations: 46598)
+
+
+Started GET "/oscillators" for ::1 at 2019-10-24 23:28:44 +0300
+Processing by OscillatorsController#index as HTML
+  Rendering oscillators/index.html.erb within layouts/application
+  Rendered oscillators/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5934ms (Views: 5932.7ms | ActiveRecord: 0.0ms | Allocations: 45216)
+
+
+Started GET "/oscillators" for ::1 at 2019-10-24 23:28:55 +0300
+Processing by OscillatorsController#index as HTML
+  Rendering oscillators/index.html.erb within layouts/application
+  Rendered oscillators/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 5)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 6047ms (Views: 6046.2ms | ActiveRecord: 0.0ms | Allocations: 45214)
+
+
+Started GET "/oscillators" for ::1 at 2019-10-24 23:29:05 +0300
+Processing by OscillatorsController#index as HTML
+  Rendering oscillators/index.html.erb within layouts/application
+  Rendered oscillators/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4824ms (Views: 4823.4ms | ActiveRecord: 0.0ms | Allocations: 45218)
+
+
+Started GET "/oscillators" for ::1 at 2019-10-24 23:29:14 +0300
+Processing by OscillatorsController#index as HTML
+  Rendering oscillators/index.html.erb within layouts/application
+  Rendered oscillators/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4566ms (Views: 4565.5ms | ActiveRecord: 0.0ms | Allocations: 45208)
+
+
+Started GET "/oscillators" for ::1 at 2019-10-24 23:29:18 +0300
+Processing by OscillatorsController#index as HTML
+  Rendering oscillators/index.html.erb within layouts/application
+  Rendered oscillators/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Compiling…
+Started GET "/oscillators" for ::1 at 2019-10-24 23:29:20 +0300
+Processing by OscillatorsController#index as HTML
+  Rendering oscillators/index.html.erb within layouts/application
+  Rendered oscillators/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 6361ms (Views: 6360.4ms | ActiveRecord: 0.0ms | Allocations: 174551)
+
+
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5687ms (Views: 5686.3ms | ActiveRecord: 0.0ms | Allocations: 46348)
+
+
+Started GET "/oscillators" for ::1 at 2019-10-24 23:31:23 +0300
+Processing by OscillatorsController#index as HTML
+  Rendering oscillators/index.html.erb within layouts/application
+  Rendered oscillators/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 5)
+[Webpacker] Compiling…
+Started GET "/oscillators" for ::1 at 2019-10-24 23:31:24 +0300
+Processing by OscillatorsController#index as HTML
+  Rendering oscillators/index.html.erb within layouts/application
+  Rendered oscillators/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 6804ms (Views: 6802.8ms | ActiveRecord: 0.0ms | Allocations: 91259)
+
+
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 7057ms (Views: 7055.4ms | ActiveRecord: 0.0ms | Allocations: 127960)
+
+
+Started GET "/oscillators" for ::1 at 2019-10-24 23:31:36 +0300
+Processing by OscillatorsController#index as HTML
+  Rendering oscillators/index.html.erb within layouts/application
+  Rendered oscillators/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Compiling…
+Started GET "/oscillators" for ::1 at 2019-10-24 23:31:38 +0300
+Processing by OscillatorsController#index as HTML
+  Rendering oscillators/index.html.erb within layouts/application
+  Rendered oscillators/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 6885ms (Views: 6884.3ms | ActiveRecord: 0.0ms | Allocations: 91210)
+
+
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 7474ms (Views: 7472.6ms | ActiveRecord: 0.0ms | Allocations: 129774)
+
+
+Started GET "/oscillators" for ::1 at 2019-10-24 23:31:49 +0300
+Processing by OscillatorsController#index as HTML
+  Rendering oscillators/index.html.erb within layouts/application
+  Rendered oscillators/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Compiling…
+Started GET "/oscillators" for ::1 at 2019-10-24 23:31:50 +0300
+Processing by OscillatorsController#index as HTML
+  Rendering oscillators/index.html.erb within layouts/application
+  Rendered oscillators/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5636ms (Views: 5633.9ms | ActiveRecord: 0.0ms | Allocations: 91196)
+
+
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 6194ms (Views: 6193.3ms | ActiveRecord: 0.0ms | Allocations: 129807)
+
+
+Started GET "/oscillators" for ::1 at 2019-10-24 23:32:01 +0300
+Processing by OscillatorsController#index as HTML
+  Rendering oscillators/index.html.erb within layouts/application
+  Rendered oscillators/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Compiling…
+Started GET "/oscillators" for ::1 at 2019-10-24 23:32:03 +0300
+Processing by OscillatorsController#index as HTML
+  Rendering oscillators/index.html.erb within layouts/application
+  Rendered oscillators/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 5)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4259ms (Views: 4258.7ms | ActiveRecord: 0.0ms | Allocations: 91210)
+
+
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5343ms (Views: 5342.4ms | ActiveRecord: 0.0ms | Allocations: 129633)
+
+
+Started GET "/oscillators" for ::1 at 2019-10-24 23:32:17 +0300
+Processing by OscillatorsController#index as HTML
+  Rendering oscillators/index.html.erb within layouts/application
+  Rendered oscillators/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Compiling…
+Started GET "/oscillators" for ::1 at 2019-10-24 23:32:19 +0300
+Processing by OscillatorsController#index as HTML
+  Rendering oscillators/index.html.erb within layouts/application
+  Rendered oscillators/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 6201ms (Views: 6199.4ms | ActiveRecord: 0.0ms | Allocations: 91212)
+
+
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 7779ms (Views: 7778.6ms | ActiveRecord: 0.0ms | Allocations: 129610)
+
+
+Started GET "/oscillators" for ::1 at 2019-10-24 23:34:10 +0300
+Processing by OscillatorsController#index as HTML
+  Rendering oscillators/index.html.erb within layouts/application
+  Rendered oscillators/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Compiling…
+Started GET "/oscillators" for ::1 at 2019-10-24 23:34:12 +0300
+Processing by OscillatorsController#index as HTML
+  Rendering oscillators/index.html.erb within layouts/application
+  Rendered oscillators/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 8577ms (Views: 8576.2ms | ActiveRecord: 0.0ms | Allocations: 91237)
+
+
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 7359ms (Views: 7358.1ms | ActiveRecord: 0.0ms | Allocations: 111658)
+
+
+Started GET "/oscillators" for ::1 at 2019-10-24 23:34:36 +0300
+Processing by OscillatorsController#index as HTML
+  Rendering oscillators/index.html.erb within layouts/application
+  Rendered oscillators/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4672ms (Views: 4670.8ms | ActiveRecord: 0.0ms | Allocations: 45205)
+
+
+Started GET "/oscillators" for ::1 at 2019-10-24 23:35:48 +0300
+Processing by OscillatorsController#index as HTML
+  Rendering oscillators/index.html.erb within layouts/application
+  Rendered oscillators/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Compiling…
+Started GET "/oscillators" for ::1 at 2019-10-24 23:35:50 +0300
+Processing by OscillatorsController#index as HTML
+  Rendering oscillators/index.html.erb within layouts/application
+  Rendered oscillators/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5119ms (Views: 5118.3ms | ActiveRecord: 0.0ms | Allocations: 91234)
+
+
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 6729ms (Views: 6728.3ms | ActiveRecord: 0.0ms | Allocations: 129550)
+
+
+Started GET "/oscillators" for ::1 at 2019-10-24 23:36:41 +0300
+Processing by OscillatorsController#index as HTML
+  Rendering oscillators/index.html.erb within layouts/application
+  Rendered oscillators/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Compiling…
+Started GET "/oscillators" for ::1 at 2019-10-24 23:36:45 +0300
+Processing by OscillatorsController#index as HTML
+  Rendering oscillators/index.html.erb within layouts/application
+  Rendered oscillators/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 8738ms (Views: 8736.5ms | ActiveRecord: 0.0ms | Allocations: 91271)
+
+
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 6829ms (Views: 6828.0ms | ActiveRecord: 0.0ms | Allocations: 46394)
+
+
+Started GET "/oscillators" for ::1 at 2019-10-24 23:37:03 +0300
+Processing by OscillatorsController#index as HTML
+  Rendering oscillators/index.html.erb within layouts/application
+  Rendered oscillators/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 3721ms (Views: 3719.5ms | ActiveRecord: 0.0ms | Allocations: 45249)
+
+
+Started GET "/oscillators" for ::1 at 2019-10-24 23:40:06 +0300
+Processing by OscillatorsController#index as HTML
+  Rendering oscillators/index.html.erb within layouts/application
+  Rendered oscillators/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 6813ms (Views: 6812.1ms | ActiveRecord: 0.0ms | Allocations: 45247)
+
+
+Started GET "/oscillators" for ::1 at 2019-10-24 23:40:48 +0300
+Processing by OscillatorsController#index as HTML
+  Rendering oscillators/index.html.erb within layouts/application
+  Rendered oscillators/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 6230ms (Views: 6228.9ms | ActiveRecord: 0.0ms | Allocations: 45250)
+
+
+Started GET "/oscillators" for ::1 at 2019-10-24 23:41:00 +0300
+Processing by OscillatorsController#index as HTML
+  Rendering oscillators/index.html.erb within layouts/application
+  Rendered oscillators/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5448ms (Views: 5447.3ms | ActiveRecord: 0.0ms | Allocations: 45237)
+
+
+Started GET "/oscillators" for ::1 at 2019-10-24 23:43:17 +0300
+Processing by OscillatorsController#index as HTML
+  Rendering oscillators/index.html.erb within layouts/application
+  Rendered oscillators/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 4)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 6373ms (Views: 6368.6ms | ActiveRecord: 0.0ms | Allocations: 45235)
+
+
+Started GET "/oscillators" for ::1 at 2019-10-24 23:43:34 +0300
+Processing by OscillatorsController#index as HTML
+  Rendering oscillators/index.html.erb within layouts/application
+  Rendered oscillators/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 3798ms (Views: 3797.2ms | ActiveRecord: 0.0ms | Allocations: 45226)
+
+
+Started GET "/oscillators" for ::1 at 2019-10-24 23:46:24 +0300
+Processing by OscillatorsController#index as HTML
+  Rendering oscillators/index.html.erb within layouts/application
+  Rendered oscillators/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4667ms (Views: 4666.2ms | ActiveRecord: 0.0ms | Allocations: 45236)
+
+
+Started GET "/oscillators" for ::1 at 2019-10-24 23:48:48 +0300
+Processing by OscillatorsController#index as HTML
+  Rendering oscillators/index.html.erb within layouts/application
+  Rendered oscillators/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 6365ms (Views: 6363.8ms | ActiveRecord: 0.0ms | Allocations: 45242)
+
+
+Started GET "/oscillators" for ::1 at 2019-10-24 23:49:05 +0300
+Processing by OscillatorsController#index as HTML
+  Rendering oscillators/index.html.erb within layouts/application
+  Rendered oscillators/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 6156ms (Views: 6155.1ms | ActiveRecord: 0.0ms | Allocations: 45240)
+
+
+Started GET "/oscillators" for ::1 at 2019-10-24 23:49:20 +0300
+Processing by OscillatorsController#index as HTML
+  Rendering oscillators/index.html.erb within layouts/application
+  Rendered oscillators/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4026ms (Views: 4025.0ms | ActiveRecord: 0.0ms | Allocations: 45236)
+
+
+Started GET "/oscillators" for ::1 at 2019-10-24 23:56:35 +0300
+  [1m[35m (6.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by OscillatorsController#index as HTML
+  Rendering oscillators/index.html.erb within layouts/application
+  Rendered oscillators/index.html.erb within layouts/application (Duration: 14.2ms | Allocations: 191)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 12940ms (Views: 12922.7ms | ActiveRecord: 0.0ms | Allocations: 1518769)
+
+
+Started GET "/oscillators" for ::1 at 2019-10-24 23:56:59 +0300
+Processing by OscillatorsController#index as HTML
+  Rendering oscillators/index.html.erb within layouts/application
+  Rendered oscillators/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 5)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5736ms (Views: 5735.3ms | ActiveRecord: 0.0ms | Allocations: 45267)
+
+

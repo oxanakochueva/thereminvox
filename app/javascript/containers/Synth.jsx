@@ -33,6 +33,9 @@ import NotesSynth from "../components/synths/NotesSynth";
 
 import Volume from "../components/synths/Volume";
 
+let unmuteAudio = require("unmute-ios-audio");
+unmuteAudio();
+
 export default class Synth extends React.Component {
   constructor(props) {
     super(props);
@@ -61,11 +64,11 @@ export default class Synth extends React.Component {
     let notes = synths.notes;
     let notesBeat = synths.notesBeat;
 
-    metalSynth.chain(metalDistortion, metalFreeverb, Tone.Master);
-    beatSynth.chain(beatChebyshev, beatChorus, beatVibrato, Tone.Master);
+    metalSynth.fan(metalDistortion, metalFreeverb, Tone.Master);
+    beatSynth.fan(beatChebyshev, beatChorus, beatVibrato, Tone.Master);
     membraneSynth.toMaster();
-    pluckSynth.chain(pluckAutoWah, Tone.Master);
-    notesSynth.chain(notesTremolo, notesPingPongDelay, Tone.Master);
+    pluckSynth.fan(pluckAutoWah, Tone.Master);
+    notesSynth.fan(notesTremolo, notesPingPongDelay, Tone.Master);
 
     //loops
 

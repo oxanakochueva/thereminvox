@@ -16,6 +16,7 @@
     "react_ujs": "^2.6.0",
     "tone": "^13.8.25",
     "turbolinks": "^5.2.0",
+    "unmute-ios-audio": "^2.3.0",
     "whatwg-fetch": "^3.0.0"
   },
   "version": "0.1.0",
