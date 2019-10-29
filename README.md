@@ -1,1 +1,1 @@
-![Image of component](./images/all.jpg)
+![Image of component](./app/assets/images/all.jpg)
